@@ -1,6 +1,10 @@
-import Card from "@/components/Card";
+import Feed from "@/components/feed/Feed";
 
-export default function Home() {
+export default async function Home() {
+  // In production, fetch from your backend:
+  // const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/posts`, { cache: "no-store" });
+  // const posts = await res.json();
+
   const posts = [
     {
       imageUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
@@ -8,19 +12,23 @@ export default function Home() {
       location: "Lake Tahoe",
       date: "2023-09-10",
     },
-    { 
+    {
       imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
       description: "Golden sands under a pink sky.",
       location: "Goa Beach",
       date: "2024-03-18",
     },
+    {
+      imageUrl: "https://images.unsplash.com/photo-1521295121783-8a321d551ad2",
+      description: "Still waters, soft breeze.",
+      location: "Hampi",
+      date: "2024-12-12",
+    },
   ];
 
   return (
-    <main className="px-4 sm:px-6 md:px-10 py-10 max-w-3xl mx-auto flex flex-col gap-10">
-      {posts.map((post, i) => (
-        <Card key={i} {...post} />
-      ))}
+    <main>
+      <Feed posts={posts} />
     </main>
   );
 }

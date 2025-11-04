@@ -1,9 +1,9 @@
-import UploadForm from "@/components/uploadForm";
+import UploadWizard from "@/components/forms/UploadWizard";
 
 export default function UploadPage() {
   return (
-    <main className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
-      <UploadForm />
+    <main className="min-h-screen flex items-center justify-center p-4">
+      <UploadWizard />
     </main>
   );
 }

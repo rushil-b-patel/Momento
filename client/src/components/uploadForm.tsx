@@ -45,7 +45,6 @@ export default function UploadForm() {
     setPreview(URL.createObjectURL(file));
 
     try {
-      // Read EXIF metadata asynchronously
       const tags = await ExifReader.load(file);
       console.log(tags);
       
