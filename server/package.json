@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "Momento backend",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "dev": "nodemon src/server.ts",
+    "dev": "nodemon --exec ts-node src/server.ts",
     "start": "node dist/server.js",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,6 +1,6 @@
 import express from "express";
-import { createPost, getAllPosts } from "../controllers/post.ts";
-import { verifyToken } from "../middlewares/auth.ts";
+import { createPost, getAllPosts } from "../controllers/post";
+import { verifyToken } from "../middlewares/auth";
 
 const router = express.Router();
 router.post("/", verifyToken, createPost);

@@ -6,8 +6,8 @@
     "outDir": "./dist",
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "moduleResolution": "nodenext",
-    "module": "nodenext",
+    "moduleResolution": "node",
+    "module": "commonjs",
     "target": "esnext",
     "esModuleInterop": true,
 
@@ -37,10 +37,6 @@
     // Recommended Options
     "strict": true,
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
     "skipLibCheck": true,
   },
   "include": ["**/*.ts"],

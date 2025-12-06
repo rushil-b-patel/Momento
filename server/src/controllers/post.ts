@@ -1,6 +1,6 @@
 import type { Request, Response, NextFunction } from "express";
 import { PrismaClient } from "@prisma/client";
-import type { AuthRequest } from "../middlewares/auth.ts";
+import type { AuthRequest } from "../middlewares/auth";
 
 const prisma = new PrismaClient();
 
@@ -12,7 +12,7 @@ export const createPost = async (req: AuthRequest, res: Response, next: NextFunc
       data: {
         description,
         location,
-        dateTaken: dateTaken ? new Date(dateTaken) : undefined,
+        dateTaken: dateTaken ? new Date(dateTaken) : null,
         imageUrl,
         userId: req.userId!,
       },
