@@ -39,7 +39,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2 select-none">
           <Camera className="w-5 h-5 text-zinc-800 dark:text-zinc-100" />
           <h1 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-            Momento
+            Pixel
           </h1>
         </Link>
 

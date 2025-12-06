@@ -9,7 +9,7 @@ const geistSans = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
 
 export const metadata: Metadata = {
-  title: "Momento — World through Rushil’s Lens",
+  title: "Pixel - World through Rushil’s Lens",
   description: "A calm, cinematic photo gallery by Rushil Patel",
 };
 
