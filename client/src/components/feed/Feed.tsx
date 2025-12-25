@@ -50,7 +50,7 @@ export default function Feed({ posts }: FeedProps) {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto flex flex-col gap-10 sm:gap-14">
+    <div className="max-w-4xl mx-auto flex flex-col gap-6">
       <div className="flex flex-wrap justify-center sm:justify-start gap-3">
         <InlineFilter
           label="Year"

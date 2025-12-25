@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { AuthProvider } from "@/context/AuthContext";
 import Header from "@/components/layout/Header";
 import "./globals.css";
-import PageWrapper from "@/components/layout/PageWrapper";
 
 const geistSans = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
@@ -29,7 +28,9 @@ export default function RootLayout({
 
         <AuthProvider>
           <Header />
-          <PageWrapper>{children}</PageWrapper>
+          <main className="pt-20 min-h-screen px-4 sm:px-6 md:px-10">
+            {children}
+          </main>
         </AuthProvider>
       </body>
     </html>

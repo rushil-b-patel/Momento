@@ -70,10 +70,10 @@ export default function FilterDialog({ open, setOpen, filters, setFilters, posts
 
               <div className="space-y-6">
                 <div>
-                  <p className="text-sm font-medium text-zinc-600 dark:text-zinc-400 mb-2">
+                  <p className="text-sm font-medium text-zinc-600 dark:text-zinc-400 mb-2 text-center">
                     Year
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 justify-center">
                     {years.map((year) => (
                       <motion.button
                         whileTap={{ scale: 0.95 }}
@@ -94,10 +94,10 @@ export default function FilterDialog({ open, setOpen, filters, setFilters, posts
                 </div>
 
                 <div>
-                  <p className="text-sm font-medium text-zinc-600 dark:text-zinc-400 mb-2">
+                  <p className="text-sm font-medium text-zinc-600 dark:text-zinc-400 mb-2 text-center">
                     Month
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 justify-center">
                     {months.map((month) => (
                       <motion.button
                         whileTap={{ scale: 0.95 }}

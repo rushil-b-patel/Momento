@@ -14,6 +14,13 @@ export async function loginUser(data: { email: string; password: string }) {
   });
 }
 
+export async function refreshAccessToken(refreshToken: string) {
+  return apiRequest("/auth/refresh", {
+    method: "POST",
+    body: JSON.stringify({ refreshToken }),
+  });
+}
+
 export async function fetchCurrentUser(token: string) {
   return apiRequest("/auth/me", {
     headers: {
